@@ -1,0 +1,40 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class StudentGrade {
+   public StudentGrade() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.print("Enter marks (0-100): ");
+      int var2 = var1.nextInt();
+      double var3 = (double)var2;
+      String var5;
+      String var6;
+      if (var3 >= (double)90.0F) {
+         var5 = "A+";
+         var6 = "PASS";
+      } else if (var3 >= (double)75.0F) {
+         var5 = "A";
+         var6 = "PASS";
+      } else if (var3 >= (double)60.0F) {
+         var5 = "B";
+         var6 = "PASS";
+      } else if (var3 >= (double)45.0F) {
+         var5 = "C";
+         var6 = "PASS";
+      } else if (var3 >= (double)33.0F) {
+         var5 = "D";
+         var6 = "PASS";
+      } else {
+         var5 = "F";
+         var6 = "FAIL";
+      }
+
+      System.out.printf("Percentage: %.2f%%%n", var3);
+      System.out.println("Grade: " + var5);
+      System.out.println("Status: " + var6);
+      var1.close();
+   }
+}
